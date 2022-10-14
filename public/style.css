@@ -1,0 +1,171 @@
+html { max-width: 80%; margin: 0 auto }
+
+.hidden {display:none}
+
+body, input {
+  font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue LT,Helvetica Neue,Segoe UI,Helvetica,Arial,sans-serif;
+  line-height: 1.5rem;
+  color: #434548; 
+  margin: 2em;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 700;
+  color: #14171a;
+}
+
+a {
+  color: #1da1f2;
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+form {
+  margin-bottom: 25px;
+}
+
+button {
+  padding: .25em 1em;
+  margin: 0;
+  border: 2px solid #1da1f2;
+  background-color: #1da1f2;
+  cursor: pointer;
+  color: white;
+  font-weight: 700;
+  font-size: .87rem;
+  line-height: 1.5rem;
+  letter-spacing: 0;
+  border-radius: 3rem;
+  text-align: center;
+  outline: 0;
+}
+
+button[disabled] {
+  border: 2px solid lightgrey;
+  background-color: lightgrey;
+}
+
+button:active {
+  box-shadow: none;
+}
+
+li {
+  margin-bottom: 5px;
+  line-height: 1.5rem;
+}
+
+footer {
+  margin-top: 50px;
+  padding-top: 25px;
+  border-top: 1px solid lightgrey;
+}
+
+.replies {
+  display: flex;
+}
+
+.replies > p:nth-child(2) {
+  flex-grow: 2;
+}
+
+.replies small,
+.end-hide small {
+  min-width: 4.5rem;
+  display: inline-block;
+  color: grey;
+}
+
+.replies p a.tweet-link {
+  display: block;
+  font-size: 0.8rem;
+}
+
+input[type=url], input[type=url]:focus {
+  border-radius: 0.2rem;
+  padding: 0.5rem;
+  width: 60%;
+  border: 1px solid #d3d3d3;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  outline: none;
+  margin: 1rem auto;
+}
+
+#tweet-url.error {
+  border-color: red;
+}
+
+button { display: block; }
+
+section input, section button, main.error button {
+  display: block;
+  margin: 1rem auto;
+}
+
+img.emoji {
+  height: 1em;
+  width: 1em;
+  margin: 0 .05em 0 .1em;
+  vertical-align: -0.1em;
+}
+
+main.error p,
+main.error h1,
+main.error h4,
+main.error button  {
+  display: block;
+  margin: 4rem auto;
+  text-align: center;
+}
+
+main.error p {
+  font-size: 10em;
+}
+
+main.tweet {
+  width: 50%;
+  margin: 0 auto 3rem;
+}
+
+main.tweet .tweet-wrapper {
+  font-family: 'Helvetica Neue', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
+  border: 1px solid #d3d3d3;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+main.tweet h1 { line-height: normal;}
+
+main.tweet div.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+main.tweet div.flex-container.hidden {display:none}
+
+main.tweet div.flex-container > div.grow {
+  flex-grow: 2;
+}
+
+main.tweet img.profile-pic { width: 48px;height: 48px; margin-right: 0.5rem;border-radius: 32px;}
+main.tweet .name { font-weight: bold;}
+main.tweet .annotations-controls {margin: 0.5rem}
+main.tweet .related-label {line-height:2.2rem}
+
+.convo-container .pagination {width: 50%; margin: 0 auto}
+
+div.pagination.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+div.pagination.flex-container > div.grow {
+  flex-grow: 2;
+}
+
+div.pagination h4 {
+  line-height: 0rem;
+}
